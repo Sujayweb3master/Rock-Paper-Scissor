@@ -7,17 +7,16 @@
         computerChoiceHolder = Math.floor(Math.random() * 3) + 1;
 
         switch(computerChoiceHolder) {
-            case 1 : return "Rock";
+            case 1 : return "rock";
                      break;
 
-            case 2 : return "Paper";
+            case 2 : return "paper";
                      break;
 
-            case 3 : return "Scissor";
+            case 3 : return "scissor";
                      break;
 
             default : return null;
         }
     }
 
-    
