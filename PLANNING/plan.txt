@@ -1,0 +1,20 @@
+	
+	
+	
+	constraints:
+		use function "getComputerChoice"
+			- should randomly return 'rock', 'paper' or 'scissors'
+		
+		use function "playTheGame"
+			- should play a single round of RPS.
+			- two parameters namely, "playerSelection" and "computerSelection"
+			- return string : "You Lose! Paper beats Rock" or "You Win! Rock beats Scissor"
+			- payerSelection parameter should be case-insensitive
+			
+			
+			
+			for function "getComputerChoice":
+			
+			-> define a variable of integer type.
+			-> 
+			
