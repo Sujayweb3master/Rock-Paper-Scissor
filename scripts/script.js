@@ -47,18 +47,38 @@
     // console.log(playRound(playerSelection, computerSelection));
 
     function game () {
+
+        let computerWinCount = 0;
+        let playerWinCount = 0;
+
         for (let i = 1; i <= 5; i++) {
 
             let holder = prompt("Input your choice:");
             let playerSelection = holder.toLowerCase();
             let computerSelection = getComputerChoice();
         
-            console.log(computerSelection);
-            console.log(playerSelection);
+            // console.log(computerSelection);
+            // console.log(playerSelection);
             
-            console.log(playRound(computerSelection, playerSelection));
+            // console.log(playRound(computerSelection, playerSelection));
 
+            let resultOfOneRound = playRound(playerSelection, computerSelection);
+            console.log(resultOfOneRound);
+
+            if (resultOfOneRound.substring(0,7) === "You Win") playerWinCount++;
+            else if (resultOfOneRound.substring(0,8) === "You Lose") computerWinCount++;
+            else {
+                playerWinCount++;
+                computerWinCount++;
+            }
+
+            // console.log(playerWinCount);
+            // console.log(computerWinCount);
 
         }
+
+        if (playerWinCount === computerWinCount)  return "Match is tied!!";
+        return (playerWinCount > computerWinCount) ? "Player is the Winner!!" : "Computer is the Winner!!";
+        
     }
 
