@@ -77,8 +77,13 @@
 
         }
 
+        console.log("Final Result:");
+
         if (playerWinCount === computerWinCount)  return "Match is tied!!";
         return (playerWinCount > computerWinCount) ? "Player is the Winner!!" : "Computer is the Winner!!";
         
     }
 
+    console.log(game());    
+
+    
