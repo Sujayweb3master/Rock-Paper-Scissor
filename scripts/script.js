@@ -43,11 +43,22 @@
         }
     }
 
-    let holder = prompt("Input your choice:");
-    const playerSelection = holder.toLowerCase();
-    const computerSelection = getComputerChoice();
 
-    console.log(computerSelection);
-    console.log(playerSelection);
+    // console.log(playRound(playerSelection, computerSelection));
 
-    console.log(playRound(playerSelection, computerSelection));
+    function game () {
+        for (let i = 1; i <= 5; i++) {
+
+            let holder = prompt("Input your choice:");
+            let playerSelection = holder.toLowerCase();
+            let computerSelection = getComputerChoice();
+        
+            console.log(computerSelection);
+            console.log(playerSelection);
+            
+            console.log(playRound(computerSelection, playerSelection));
+
+
+        }
+    }
+
